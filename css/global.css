@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--GENERAL CSS--*/
+ul{margin:0; padding:0;}
+li{list-style:none;}
+img{max-width:100%;}
+p, label{margin:0; padding:0;}
+a, span{display:inline-block;}
+a, a:hover{text-decoration:none;}
+h1, h2, h3, h4, h5, h6{padding:0; margin:0; font-weight:normal;}
+figure{margin:0;}
+input:focus, button:focus, a:focus{outline:none;}
+textarea:focus{outline:none;}
+button{border:0; padding:0;}
+
+/*--TRANSITIONS--*/
+a, button, .transition-all{transition:all 0.1s linear;}
+
+/*--Row and Rows--*/
+.row.rows{margin:-15px;}
+.row.rows .columns{padding:15px;}
+@media(max-width:991px){
+	.row.rows{margin:-10px;}
+	.row.rows .columns{padding:10px;}	
+}
+
+/*--Fonts--*/
+@font-face {
+    font-family:'rifficFreeBold';
+    src: url('../fonts/rifficFreeBold.eot');
+	src: url('../fonts/rifficFreeBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/rifficFreeBold.woff2') format('woff2'),
+		url('../fonts/rifficFreeBold.woff') format('woff'),
+		url('../fonts/rifficFreeBold.svg#e Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+@font-face {
+    font-family:'Futura Md BT';
+    src: url('../fonts/Futura Md BT Medium.eot');
+	src: url('../fonts/Futura Md BT Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura Md BT Medium.woff2') format('woff2'),
+		url('../fonts/Futura Md BT Medium.woff') format('woff'),
+		url('../fonts/Futura Md BT Medium.svg#Futura Md BT Medium') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-02DC;
+}
+@font-face {
+    font-family:'Libre Franklin';
+    src: url('../fonts/Libre Franklin Regular.eot');
+	src: url('../fonts/Libre Franklin Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Libre Franklin Regular.woff2') format('woff2'),
+		url('../fonts/Libre Franklin Regular.woff') format('woff'),
+		url('../fonts/Libre Franklin Regular.svg#Libre Franklin Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+}
+@font-face {
+    font-family:'Libre Franklin Bold';
+    src: url('../fonts/Libre Franklin Bold.eot');
+	src: url('../fonts/Libre Franklin Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Libre Franklin Bold.woff2') format('woff2'),
+		url('../fonts/Libre Franklin Bold.woff') format('woff'),
+		url('../fonts/Libre Franklin Bold.svg#Libre Franklin Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+}
+
+/*--Varibales--*/
+:root{
+	--font-family:'Poppins', sans-serif;
+	--headding-font:'rifficFreeBold';
+}
+
+/*--Varibales Classes--*/
+.headding-font{font-family:var(--headding-font);}
+
+/*--Headdings--*/
+h1{font-size:72px; line-height:129%;}
+h2{font-size:60px;}
+h3{font-size:48px;}
+h4{font-size:36px;}
+h5{font-size:28px;}
+h6{font-size:24px; line-height:126%;}
+@media(max-width:1299px){
+	h1{font-size:65px;}
+	h2{font-size:55px;}
+	h3{font-size:44px;}
+	h4{font-size:33px;}
+	h5{font-size:26px;}
+	h6{font-size:22px;}
+}
+@media(max-width:1199px){
+	h1{font-size:60px;}
+	h2{font-size:50px;}
+	h3{font-size:41px;}
+	h4{font-size:30px;}
+	h5{font-size:24px;}
+	h6{font-size:20px;}
+}
+@media(max-width:991px){
+	h1{font-size:55px;}
+	h2{font-size:45px;}
+	h3{font-size:38px;}
+	h4{font-size:27px;}
+	h5{font-size:22px;}
+	h6{font-size:19px;}
+}
+@media(max-width:767px){
+	h1{font-size:50px;}
+	h2{font-size:40px;}
+	h3{font-size:35px;}
+	h4{font-size:25px;}
+	h5{font-size:20px;}
+	h6{font-size:18px;}
+}
+@media(max-width:575px){
+	h1{font-size:45px;}
+	h2{font-size:37px;}
+	h3{font-size:33px;}
+	h4{font-size:23px;}
+	h5{font-size:19px;}
+	h6{font-size:17px;}
+}
+
+/*--Paragraph--*/
+p{font-size:20px; line-height:150%;}
+.fs-18{font-size:18px;}
+@media(max-width:1199px){
+	p{font-size:19px;}
+	.fs-18{font-size:17px;}
+}
+@media(max-width:991px){
+	p{font-size:18px;}
+	.fs-18{font-size:16px;}
+}
+@media(max-width:767px){
+	p{font-size:17px;}
+	.fs-18{font-size:15px;}
+}
+@media(max-width:575px){
+	p{font-size:16px;}
+	.fs-18{font-size:14px;}
+}
+
+/*--Nav Icon--*/
+.nav-icon{width:20px; height:14px; position:relative; cursor:pointer; z-index:9999;}
+.nav-icon::before, .nav-icon::after{transition: all 0.1s linear;}
+.nav-icon::before{position:absolute; left:0; top:0; width:100%; height:2px; background-color:#fff; content:"";}
+.nav-icon::after{position:absolute; left:0; bottom:0; width:50%; height:2px; background-color:#fff; content:"";}
+.nav-icon span{display:block; height:2px; background-color:#fff; transition:all 0.1s linear;}
+.nav-icon.active{width:20px; height:20px;}
+.nav-icon.active span{opacity:0; visibility:hidden; background-color:#fff;}
+.nav-icon.active::before{transform:translateY(-50%) rotate(45deg); transform-origin:center center; top:50%; background-color:#fff;}
+.nav-icon.active::after{width:100%; transform:translateY(50%) rotate(-45deg); transform-origin:center center; bottom:50%; background-color:#fff;}
