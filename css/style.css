@@ -56,7 +56,7 @@ body{font-family:var(--font-family); color:#fff; background-color:#000;}
 .utility-icon{min-height:94px; display:grid; place-items:center;}
 .golden-star{max-width:209px;}
 
-.roadmap-section{background:url(../images/roadmap.png) center center no-repeat #212121; background-size:100% 100%;}
+.roadmap-section{background:url(../images/roadmap.png) center center no-repeat #212121; background-size:85% 100%;}
 .roadmap{max-width:900px; margin:0 auto;}
 .roadmap-list .roadmap:not(:last-child){margin-bottom:40px;}
 .roadmap{border-radius:24px; border:4px solid #fff; min-height:180px; padding:10px; background-color:#212121; box-shadow:0 10px 0 #191919; position:relative;}
